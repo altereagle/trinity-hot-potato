@@ -9,7 +9,7 @@
   </head>
   
   <!-- Body of page -->
-  <body>
+  <body> 
     
     <a-assets>
       <!--
@@ -17,14 +17,13 @@
         * The src attribute means source (as in where is this located?)
         * Make sure you are using the correct extension ( image.jpg, image.png, image.jpeg, etc..) 
       -->
-      <img id="potato" src="images/potato.png">
-      <img "moon-texture" src="images/moon.jpg">
-      <img id="kendells-random-potato-texture" src="images/potato.png">
-      <img id="elles-Beach-texture" src="images/Beach.jpg">
+      
+      
       <img id="potato-coin-texture" src="images/Potato Coin.png">
     </a-assets>
     
-    <a-scene background="color: #9400D3">
-      <a-cylinder position="0 0.75 -4" src="#potato-coin-texture" radius="0.5" height="0.2" color="#FFC65D" shadow></a-cylinder>
+    <a-scene background="color: #9400D3" vr-mode-ui="enabled: false">
+     <a-cylinder position="0 0.75 -3" src="#potato-coin-texture" radius="0.5" height="0.2" color="#FFC65D" shadow></a-cylinder>
     </a-scene>
 </html>
+
