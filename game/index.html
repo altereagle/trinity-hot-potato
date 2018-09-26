@@ -5,12 +5,26 @@
     <title>Trinity Hot Potato</title>
     <!-- VueJs Files -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Notable');
+
+      potato-title {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 3em;
+        font-family: 'Notable', sans-serif;
+        color: #800;
+        z-index: 752;
+      }
+    </style>
   </head>
+  
   
   <!-- Body of page -->
   <body> 
-    
+  <potato-title>Trinity Hot Potato</potato-title>
     <a-assets>
       <!--
       Comments / Notes:
@@ -23,7 +37,7 @@
     </a-assets>
     
     <a-scene background="color: #9400D3" vr-mode-ui="enabled: false">
-     <a-cylinder position="0 0.75 -3" src="#potato-coin-texture" radius="0.5" height="0.2" color="#FFC65D" shadow></a-cylinder>
+    <a-cylinder position="0 0.75 -2" src="#potato-coin-texture" radius="0.5" height="0.2" color="#FFC65D" shadow></a-cylinder>
     </a-scene>
 </html>
 
