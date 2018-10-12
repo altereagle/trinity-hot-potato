@@ -6,50 +6,41 @@
     <!-- VueJs Files -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
-    <style type="text/css">
-      @import url('https://fonts.googleapis.com/css?family=Notable');
-      @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
-
-        potato-title {
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          font-size: 3em;
-          font-family: 'Notable', sans-serif;
-          color: #2103;
-          z-index: 752;
-        }
-        
-          potato-subtitle {
-            font-family: 'Titillium Web', sans-serif;
-            position: absolute;
-            top:150px;
-            z-index: 752;
-          }
-    </style>
+    <!-- Styles are in this stylesheet -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   
   
   <!-- Body of page -->
   <body> 
-  <potato-title>Trinity Hot Potato</potato-title>
-  <potato-subtitle> A Trinity Game by Sarah, Hayden, Elle, and James</potato-subtitle>
+    <potato-title>Trinity Hot Potato</potato-title>
+    <potato-subtitle> A Trinity Game by Sarah, Hayden, Elle, and James</potato-subtitle>
+    <button class="button">Start</button>
+  
     <a-assets>
       <!--
       Comments / Notes:
         * The src attribute means source (as in where is this located?)
         * Make sure you are using the correct extension ( image.jpg, image.png, image.jpeg, etc..) 
       -->
-      
-      
+    
       <img id="potato-coin-texture" src="images/Potato Coin.png">
+      
     </a-assets>
     
+    
     <a-scene background="color: #9400D3" vr-mode-ui="enabled: false">
-    <a-cylinder position="0 0.75 -2" src="#potato-coin-texture" radius="0.5" height="0.2" color="#FFC65D" shadow></a-cylinder>
-    
-    
-    
+      
+      <!-- Our coin -->
+      <a-cylinder position="0 0.75 -2" src="#potato-coin-texture" radius="0.5" height="0.2" color="#FFC65D" shadow>
+        <!-- The animated coin -->
+        <a-animation attribute="rotation"
+                     dur="3000"
+                     fill="forwards"
+                     to="0 0 360"
+                     repeat="indefinite"></a-animation>  
+      </a-cylinder>
     </a-scene>
+  </body>
 </html>
 
