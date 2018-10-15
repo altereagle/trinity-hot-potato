@@ -7,6 +7,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
     <!-- Styles are in this stylesheet -->
     <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -46,15 +50,19 @@
           }
     </style>
 
+
   </head>
   
   
   <!-- Body of page -->
   <body> 
+
+  
     <potato-title>Trinity Hot Potato</potato-title>
     <potato-subtitle> A Trinity Game by Sarah, Hayden, Elle, and James</potato-subtitle>
     <button class="button">Start</button>
   
+
     <a-assets>
       <!--
       Comments / Notes:
@@ -65,14 +73,15 @@
       <img id="potato-coin-texture" src="images/Potato Coin.png">
       
     </a-assets>
-    <button class="button">Start</button>
+    <button class="button" name="Comanda" value="Comanda" id="Comanda" data-clicked="unclicked">Start</button>
         
     
 
 
     <a-scene background="col\or: #9400D3" vr-mode-ui="enabled: false">
     <a-cylinder position="0 0.75 -2" src="#potato-coin-texture" radius="0.5" height="0.2" color="#FFC65D" shadow></a-cylinder> 
-  
+
+ 
      
 
     
@@ -88,9 +97,12 @@
                      dur="3000"
                      fill="forwards"
                      to="0 0 360"
-                     repeat="indefinite"></a-animation>  
+                     repeat="indefinite"></a-animation>     
+  
+
       </a-cylinder>
     </a-scene>
   </body>
+    <script type="text/javascript" src="script.js"></script>
 </html>
 

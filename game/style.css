@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Notable');
-      @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
-        potato-title {
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          font-size: 3em;
-          font-family: 'Notable', sans-serif;
-          color: #2103;
-          z-index: 752;
-        }
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+potato-title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 3em;
+  font-family: 'Notable', sans-serif;
+  color: #2103;
+  z-index: 752;
+}
+
+     
+
         
           potato-subtitle {
             font-family: 'Titillium Web', sans-serif;
